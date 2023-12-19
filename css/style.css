@@ -1,0 +1,439 @@
+/* importing fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+
+/* css reset  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* body {
+    background-color: red;
+} */
+
+header {
+    background-color: brown;
+    padding: 0px 50px;
+    height: 100px;
+    color: #fff;
+    background: #01416f;
+    justify-content: space-between;
+}
+
+.topBar {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    padding: 0px 50px;
+    font-weight: 400;
+    width: 55%;
+    height: 35px;
+    background-color: #9fd8ed;
+    top: 0px;
+    right: 0px;
+    border-radius: 0px 0px 0px 15px;
+}
+
+.logo img {
+    width: 160px;
+}
+
+
+.navbar {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 25px;
+    position: relative;
+}
+
+.navlist,
+.social {
+    list-style-type: none;
+    color: #f7941d;
+}
+
+.navlist {
+    margin-left: 20px;
+
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 5px;
+    padding: 5px;
+}
+
+.navlist li a:hover {
+    padding-bottom: 25px;
+    border-bottom: 2px solid #f7941d;
+}
+
+.social li a {
+    margin: 0px 5px;
+    padding: 5px;
+}
+
+.social li a i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.social li a i:hover {
+    color: #f7941d;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    background: #f7941d;
+    padding: 10px 15px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+}
+
+.btn a:hover {
+    background: none;
+    font-weight: normal;
+}
+
+.toggle a i {
+    color: #fff;
+    font-size: 30px;
+    /* display: none; */
+    position: absolute;
+    right: 10px;
+    bottom: -5px;
+
+}
+
+.close,
+.menu {
+    display: none;
+}
+
+.container_slider {
+    width: 100%;
+    height: 600px;
+    background-color: #D8CFEE;  
+}
+
+
+.sliders{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* display: none; */
+   
+}
+.myclass {
+    width: 100%;
+    height: 500px;
+    height: 100%;
+    /* display: none; */
+}
+.btns{
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+}
+.btns a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background: #f7941d;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+}
+.btns a:hover{
+    box-shadow: 1px 1px 10px 2.5px #fff;
+}
+
+.mission{
+    background: url('https://noscihigh.org/images/water.jpg')no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+.mission::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(1, 65, 111, .8);
+
+}
+.content{
+    z-index: 999;
+    padding: 0px 120px;
+    text-align: center;
+}
+.content h1{
+    margin-bottom: 10px;
+}
+.content p{
+    text-align: left;
+    line-height: 1.5;
+}
+
+.moment{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    background-color: #D8CFEE;
+    justify-content: center;
+}
+.moment-box{
+    width: 25%;
+   height: 70%;
+   border: 2px solid red;
+   margin: 0px 10px;
+   background-color: #f7941d;
+   display: flex;
+   align-items: center;
+   /* justify-content: center; */
+   text-align: center;
+   padding: 10px 10px;
+   
+
+}
+
+.moment-content{
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+}
+
+.moment-content:hover{
+    /* visibility: hidden; */
+    border: 2px solid #fff;
+}
+
+.life-section{
+    height: 650px;
+    width: 100%;
+    background-color: #01416f;
+    text-align: center;
+}
+
+.life-topBar{
+    height: 20%;
+    background-color: #003c51;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.galerry{
+height: 80%;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 20px;
+padding:  20px;
+}
+.photos{
+    /* border: 2px solid red; */
+}
+.photos img{
+    width: 100%;
+    height: 100%;
+}
+.photo_1{
+    background: url('/img/un.jpg')no-repeat center center/cover;
+}
+.photo_2{
+    background: url('/img/un.jpg')no-repeat center center/cover;
+}
+.photo_3{
+    background: url('/img/un.jpg')no-repeat center center/cover;
+}
+.photo_4{
+    background: url('/img/un.jpg')no-repeat center center/cover;
+}
+.photo_5{
+    background: url('/img/un.jpg')no-repeat center center/cover;
+}
+.photo_6{
+    background: url('/img/un.jpg')no-repeat center center/cover;
+}
+.photo_7{
+    background: url('/img/un.jpg')no-repeat center center/cover;
+}
+.photo_8{
+    background: url('/img/un.jpg')no-repeat center center/cover;
+}
+
+
+
+
+
+
+
+
+
+/* utility classes  */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+
+    .navlist,
+    .social,
+    .topBar {
+        display: none;
+    }
+
+
+    .navlist {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #dbf3fc;
+        width: 350px;
+        top: 60.5px;
+        z-index: 99;
+        right: -50px;
+        text-align: center;
+        height: 100vh;
+        padding: 10px 0px;
+    }
+
+
+    .social {
+        display: flex;
+        position: absolute;
+        top: 300px;
+        background-color: #003c51;
+        height: 350px;
+        width: 350px;
+        flex-direction: column;
+        z-index: 999;
+        right: -50px;
+        padding: 0px;
+    }
+
+    .social li {
+        text-align: left;
+        width: 100%;
+        margin: 15px 0px;
+        padding: 0px 10px;
+
+    }
+
+    .navlist li {
+
+        text-align: left;
+        width: 100%;
+        margin: 20px 0px;
+        padding: 0px 10px;
+
+    }
+
+    .navlist li a {
+        color: #01416f;
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .navlist li a:hover {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #f7941d;
+    }
+
+    .navlist span {
+        display: none;
+    }
+
+    .navbar {
+        margin: 0px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .navlist,
+    .social {
+        display: none;
+    }
+
+    .container_slider {
+        width: 100%;
+        height: 400px;
+        background-color: #D8CFEE;
+    }
+
+    .myclass {
+        height: 85%;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 450px) {
+
+
+
+    header {
+        padding: 0px 10px;
+    }
+
+    .logo img {
+        width: 110px;
+    }
+
+    .btn a {
+        padding: 5px 8px;
+        letter-spacing: 0px;
+    }
+
+    .navlist,
+    .social {
+        right: -10px;
+        width: 60vw;
+    }
+
+    .container_slider {
+        height: 350px;
+    }
+
+    .myclass {
+        height: 100%;
+    }
+    .btns a { 
+        font-size: 16px;
+        padding: 7px 10px;
+        letter-spacing: 0px;
+    }
+
+
+
+}

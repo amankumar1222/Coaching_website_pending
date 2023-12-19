@@ -1,0 +1,13 @@
+# Ignore compiled binaries
+
+*.exe
+*.o
+
+# Ignore log files
+*.log
+
+# Ignore a directory named "temp"
+/temp/
+myego/
+# Ignore a specific file
+sensitive_info.txt
